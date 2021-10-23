@@ -1,0 +1,102 @@
+
+:root {
+    --text: #FF7951;
+    --primary: #FF7951;
+    --light: #888888;
+}
+
+body.dark {
+    background-color: #292C35;
+}
+
+body.dark h1 {
+    color: #fff;
+}
+
+
+body.dark h2 {
+    color: #fff;
+}
+
+body.dark .nav-icons li a i {
+    color: #fff;
+}
+
+body.dark .nav-icons li a i:hover {
+    color: var(--primary);
+}
+
+body.dark .about-me {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+    background-blend-mode: multiply, multiply;
+}
+
+body.dark .about-me:hover img {
+    filter: drop-shadow(0 0 0.75rem #fff);
+}
+
+body.dark footer p{
+    color: #fff;
+}
+
+
+body.dark .footer-social a i{
+    color: #fff;
+}
+
+body.dark .footer-social a i:hover{
+    color: var(--primary);
+    opacity: 1;
+}
+
+body.dark .scroll-top{
+    color: #fff;
+}
+
+/* Toggle Dark Mode */
+
+.container-dark-mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.label {
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    height: 26px;
+    width: 50px;
+    padding: 5px;
+    position: relative;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+
+.ball {
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    background-color: #fff;
+    border-radius: 50px;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translate(20px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
