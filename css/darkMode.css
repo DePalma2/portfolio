@@ -35,6 +35,11 @@ body.dark .about-me:hover img {
     filter: drop-shadow(0 0 0.75rem #fff);
 }
 
+body.dark .about-me span {
+    font-weight: 800;
+    color: #f17f5c;
+}
+
 body.dark footer p{
     color: #fff;
 }
@@ -51,6 +56,14 @@ body.dark .footer-social a i:hover{
 
 body.dark .scroll-top{
     color: #fff;
+}
+
+body.dark h4{
+    color: #fff;
+}
+
+body.dark .about-email-btn:hover{
+    filter: drop-shadow(0 0 0.75rem #fff);
 }
 
 /* Toggle Dark Mode */

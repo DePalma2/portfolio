@@ -56,7 +56,7 @@ a {
 
 /* Scroll Top */
 
-.scroll-top{
+.scroll-top {
     position: fixed;
     bottom: 40px;
     right: 40px;
@@ -69,14 +69,14 @@ a {
     scroll-behavior: smooth;
 }
 
-.scroll-top.active{
+.scroll-top.active {
     visibility: visible;
     opacity: 1;
     scroll-behavior: smooth;
 }
 
 @media (max-width:560px) {
-    .scroll-top{
+    .scroll-top {
         right: 80px;
     }
 }
@@ -92,6 +92,7 @@ a {
 .hero-title span {
     color: var(--text);
 }
+
 
 header ul li {
     margin-top: 30px;
@@ -127,48 +128,6 @@ header ul li a:hover {
     }
 }
 
-/* @media (max-width: 400px) {
-    header {
-        text-align: center;
-    }
-
-    .hero-title {
-        font-size: 40px !important;
-        line-height: 65px;
-        padding: 20px;
-    }
-}
-
-@media (max-width: 600px) {
-    header {
-        text-align: center;
-    }
-
-    .hero-title {
-        font-size: 60px;
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-        text-align: center;
-    }
-
-
-}
-
-@media (max-width: 1024px) {
-    header {
-        text-align: center;
-    }
-
-    .hero-title {
-        font-size: 60px !important;
-        line-height: 65px;
-        padding: 20px;
-        text-align: center;
-    }
-} */
 
 /* Nav Icons */
 
@@ -308,7 +267,7 @@ header ul li a:hover {
 @media (max-width: 560px) {
     .about-me {
         margin-left: -50px;
-        width: 100%;
+        width: 97%!important;
         clip-path: none;
     }
 
@@ -337,7 +296,39 @@ header ul li a:hover {
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
+    .about-me {
+        margin-left: -50px;
+        width: 90%;
+        clip-path: none;
+    }
+
+    .about-me h2 {
+        font-size: 25px;
+        color: white;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+
+    .about-me span {
+        font-weight: 800;
+        color: #fff;
+
+    }
+
+    .card-about-me {
+        grid-template-columns: 1fr;
+    }
+
+    .about-me img {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 800px) {
     .about-me {
         margin-left: -50px;
         width: 100%;
@@ -369,7 +360,7 @@ header ul li a:hover {
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px) {
     .about-me {
         margin-left: -50px;
         width: 100%;
@@ -401,61 +392,31 @@ header ul li a:hover {
     }
 }
 
-@media (max-width: 900px){
-    .about-me {
-        margin-left: -50px;
-        width: 100%;
-        clip-path: none;
-    }
-
-    .about-me h2 {
-        font-size: 25px;
-        color: white;
-        text-align: center;
-        margin-top: 0px;
-        margin-bottom: 40px;
-    }
-
-    .about-me span {
-        font-weight: 800;
-        color: #fff;
-
-    }
-
-    .card-about-me {
-        grid-template-columns: 1fr;
-    }
-
-    .about-me img {
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 900px){
+@media (max-width: 900px) {
     .about-me {
         margin-left: -50px;
         width: 120%;
         clip-path: none;
     }
+
     .about-me img {
         width: 200px;
         height: 200px;
-        
+
     }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
     .about-me {
         margin-left: -50px;
         width: 120%;
         clip-path: none;
     }
+
     .about-me img {
         width: 300px;
         height: 300px;
-        
+
     }
 }
 
@@ -638,16 +599,60 @@ header ul li a:hover {
     }
 }
 
+@media (max-width:560px) {
+    .proyect-img {
+        flex: 100%;
+    }
+}
+
 @media (max-width:400px) {
-    .proyect-img .proyect-details p{
+    .proyect-img .proyect-details p {
         font-size: 16px;
     }
 }
 
 
+/* Contact */
+
+.about-title {
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-subtitle {
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-email-btn {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+    transition: 0.4s ease;
+    padding: 10px;
+}
+
+.about-email-btn:hover {
+    filter: drop-shadow(0 0 0.75rem var(--primary));
+}
+
+
 /* Footer */
 
-footer{
+footer {
     padding: 20px 0;
 }
 
@@ -656,22 +661,22 @@ footer p {
     margin-top: 30px;
 }
 
-footer p a{
+footer p a {
     color: var(--primary);
     opacity: 0.8;
     transition: 0.3s ease;
 }
 
-footer p a:hover{
+footer p a:hover {
     opacity: 1;
 }
 
-.footer-social{
+.footer-social {
     text-align: center;
     color: #000;
 }
 
-.footer-social a{
+.footer-social a {
     color: inherit;
     margin: 0 20px;
 }
@@ -680,10 +685,10 @@ footer p a:hover{
     font-size: 34px;
     color: inherit;
     transition: 0.5s ease;
-    opacity: 0.6    ;
+    opacity: 0.6;
 }
 
-.footer-social a i:hover{
+.footer-social a i:hover {
     color: var(--primary);
     opacity: 1;
 }
