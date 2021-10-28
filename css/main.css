@@ -502,6 +502,25 @@ header ul li a:hover {
     flex-wrap: wrap;
 }
 
+.title-proyect{
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.subtitle-proyect{
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 .proyect-img {
     position: relative;
     flex: 1;
