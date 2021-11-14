@@ -118,7 +118,7 @@ header ul li a:hover {
 @media (max-width:560px) {
     header {
         text-align: center;
-        margin-right: 80px;
+        margin-right: 20px;
     }
 
     .hero-title {
@@ -264,10 +264,18 @@ header ul li a:hover {
     color: var(--text);
 }
 
+@media (max-width: 300px) {
+    .about-me {
+        margin-left: -50px;
+        width: 120% !important;
+        clip-path: none;
+    }
+}
+
 @media (max-width: 560px) {
     .about-me {
         margin-left: -50px;
-        width: 97%!important;
+        width: 100% !important;
         clip-path: none;
     }
 
@@ -299,7 +307,7 @@ header ul li a:hover {
 @media (max-width: 600px) {
     .about-me {
         margin-left: -50px;
-        width: 90%;
+        width: 113.2% !important;
         clip-path: none;
     }
 
@@ -489,6 +497,7 @@ header ul li a:hover {
 }
 
 
+
 /* Proyect */
 
 .container-proyect {
@@ -502,7 +511,7 @@ header ul li a:hover {
     flex-wrap: wrap;
 }
 
-.title-proyect{
+.title-proyect {
     font-size: 30px;
     color: #000;
     text-align: center;
@@ -512,7 +521,7 @@ header ul li a:hover {
     letter-spacing: 1px;
 }
 
-.subtitle-proyect{
+.subtitle-proyect {
     font-size: 16px;
     color: #000;
     text-align: center;
