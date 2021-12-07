@@ -66,6 +66,10 @@ body.dark .about-email-btn:hover{
     filter: drop-shadow(0 0 0.75rem #fff);
 }
 
+body.dark .subtitle-proyect{
+    color: white;
+}
+
 /* Toggle Dark Mode */
 
 .container-dark-mode {
@@ -113,3 +117,5 @@ body.dark .about-email-btn:hover{
 .fa-sun {
     color: #f39c12;
 }
+
+
